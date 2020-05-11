@@ -15,6 +15,7 @@ module.exports = {
 			template: "./src/index.html"
 		})
 	],
+	devtool: "inline-source-map",
 	module: {
         rules: [
 			{
@@ -26,6 +27,12 @@ module.exports = {
 						presets: ["@babel/preset-env"]
 					}
 				}
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				use: [
+					"file-loader"
+				]
 			}
 		]
 	}
