@@ -1,0 +1,76 @@
+@font-face {
+	font-family: "Caveat";
+	src: url("./Caveat-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Pangolin";
+	src: url("./Pangolin-Regular.ttf");
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Pangolin";
+	font-size: 14pt;
+	background-color: #eee;
+}
+
+#background {
+	background-image: url("./background.jpg");
+	background-size: cover;
+	background-position: center;
+	opacity: 0.4;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#center {
+	text-align: center;
+	opacity: 0.8;
+}
+
+#title {
+	font-family: "Caveat", cursive;
+	font-size: 70pt;
+}
+
+p {
+	text-transform: uppercase;
+	opacity: 0.8;
+	margin: 0px;
+}
+
+#links {
+	margin-top: 50px;
+}
+
+.link {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0 30px 0 30px;
+	position: relative;
+	font-size: 16pt;
+	transition: transform 200ms;
+}
+
+.link:hover {
+	transform: scale(1.3);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}

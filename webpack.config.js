@@ -2,7 +2,7 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-	mode: "development",
+	mode: "production",
 	devServer: {
 		port: 3000
 	},
@@ -18,6 +18,16 @@ module.exports = {
 	devtool: "inline-source-map",
 	module: {
         rules: [
+			{
+				test: /\.css$/i,
+				use: ["style-loader", "css-loader"],
+			},
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				use: [
+					"file-loader",
+				],
+			},
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
