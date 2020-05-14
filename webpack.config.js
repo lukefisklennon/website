@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 module.exports = {
 	mode: "production",
 	devServer: {
-		port: 3000
+		port: 3000,
+		inline: false
 	},
 	output: {
 		filename: "[contenthash].js",
@@ -19,11 +20,15 @@ module.exports = {
 	module: {
         rules: [
 			{
+				test: /\.(html)$/,
+				use: ["html-loader"]
+			},
+			{
 				test: /\.css$/i,
 				use: ["style-loader", "css-loader"],
 			},
 			{
-				test: /\.(png|svg|jpg|gif)$/,
+				test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf)$/,
 				use: [
 					"file-loader",
 				],
@@ -37,12 +42,6 @@ module.exports = {
 						presets: ["@babel/preset-env"]
 					}
 				}
-			},
-			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				use: [
-					"file-loader"
-				]
 			}
 		]
 	}

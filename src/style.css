@@ -20,20 +20,28 @@ body {
 	align-items: center;
 	font-family: "Pangolin";
 	font-size: 14pt;
-	background-color: #eee;
+	/* color: white; */
 }
 
-#background {
-	background-image: url("./background.jpg");
+/* #background {
+	background-image: url("https://image.freepik.com/free-vector/abstract-ink-colourful-background_82984-366.jpg");
+	transform: scale(1.3);
 	background-size: cover;
 	background-position: center;
-	opacity: 0.4;
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
+	filter: blur(50px) brightness(0.9);
+} */
+
+#canvas {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	filter: blur(50px) contrast(0.5) saturate(0.8) brightness(1.8);
+	transform: scale(1.2);
 }
 
 #center {
@@ -71,6 +79,15 @@ p {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: inherit;
 	display: inline-block;
+}
+
+.project {
+	width: 350px;
+	text-align: left;
+}
+
+.project img {
+	width: 100%;
 }
