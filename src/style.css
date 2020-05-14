@@ -20,6 +20,7 @@ body {
 	align-items: center;
 	font-family: "Pangolin";
 	font-size: 14pt;
+	background-color: #3399ff;
 	/* color: white; */
 }
 
@@ -38,10 +39,8 @@ body {
 
 #canvas {
 	position: fixed;
-	left: 0px;
-	top: 0px;
-	filter: blur(50px) contrast(0.5) saturate(0.8) brightness(1.8);
-	transform: scale(1.2);
+	left: 50%;
+	top: 50%;
 }
 
 #center {
