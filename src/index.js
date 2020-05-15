@@ -3,9 +3,9 @@ import "./style.css"
 const element = document.getElementById("canvas")
 let canvas = element.getContext("2d")
 
-const blur = 8
+const blur = 7
 const shrink = 20
-const fps = 30
+const fps = 10
 const totalCircles = 50
 
 const radiusRange = [150 / shrink, 250 / shrink]
@@ -102,7 +102,7 @@ function random(a, b, mirror) {
 }
 
 function resize() {
-	const dpr = devicePixelRatio || 1
+	const dpr = 1//devicePixelRatio || 1
 	element.style.width = `${innerWidth / shrink}px`
 	element.style.height = `${innerHeight / shrink}px`
 	element.width = innerWidth / shrink * dpr
