@@ -107,6 +107,8 @@ function render() {
 	const now = Date.now()
 	// todo: scale stuff over time
 	canvas.clearRect(0, 0, innerWidth, innerHeight)
+	// canvas.fillStyle = "#3399ff"
+	// canvas.fillRect(0, 0, innerWidth, innerHeight)
 	circles.forEach(circle => circle.render(1 + mouseDelta * mouseDeltaFactor))
 }
 
