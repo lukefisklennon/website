@@ -4,11 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 module.exports = {
 	mode: "production",
 	devServer: {
-		port: 3000,
-		inline: false
+		port: 3000
 	},
 	output: {
-		filename: "[contenthash].js",
+		filename: "[hash].js",
 		path: path.resolve(__dirname, "dist")
 	},
 	plugins: [
