@@ -31,7 +31,7 @@ body {
 
 #center {
 	text-align: center;
-	opacity: 0.8;
+	z-index: 100;
 }
 
 #title {
@@ -59,7 +59,7 @@ p {
 }
 
 .link:hover {
-	transform: scale(1.3);
+	transform: scale(1.25);
 }
 
 a {

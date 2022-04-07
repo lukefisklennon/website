@@ -9,14 +9,14 @@ const fps = 10
 const totalCircles = 50
 
 const radiusRange = [150 / shrink, 250 / shrink]
-const velocityRange = [15 / shrink / fps, 30 / shrink / fps]
+const velocityRange = [30 / shrink / fps, 40 / shrink / fps]
 const hueRange = [15, 345]
-const hueVelocityRange = [4 / fps, 8 / fps]
+const hueVelocityRange = [8 / fps, 10 / fps]
 
 element.style.transform = `translate(-50%, -50%) scale(${shrink + 2})`
 element.style.filter = `blur(${blur}px) contrast(0.5) saturate(0.7) brightness(1.8)`
 
-const mouseDeltaFactor = 0.15
+const mouseDeltaFactor = 0.1
 let mouseLast = null
 let mouseStopTimer = null
 let mouseDelta = 0

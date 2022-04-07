@@ -1,3 +1,3 @@
-webpack
+npx webpack
 ssh root@lukefl.me "rm -r /var/www/html/*"
 scp -r dist/* root@lukefl.me:/var/www/html
